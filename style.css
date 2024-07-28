@@ -1,0 +1,135 @@
+
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+/* shared style */
+
+.black{
+    color: rgb(60, 60, 60)
+}
+.bg-color {
+    background: rgb(255, 255, 255);
+}
+.btn-primary {
+    background-color: #fd6e0a;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 5px;
+}
+/* header style */
+
+.header {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    
+}
+nav ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+/* banner style */
+
+.banner-greeting{
+    
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 80px;
+}
+.banner-title{
+    color: #fd6e0a;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 80px;
+}
+.banner-description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* margin-bottom: 40px; */
+}
+.banner-pic {
+    width: 600px ;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 135px 0 220px ;
+}
+.banner-content {
+    max-width: 580px;
+}
+
+
+
+/* 2nd banner style*/
+
+.banner-two {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 135px 0 220px ;
+}
+.banner-content-two {
+    max-width: 500px;
+    margin-top: 200px
+}
+
+
+@media screen and (max-width:576px) {
+    nav ul , .banner , .banner-two{
+        flex-direction:column
+    }
+    .banner ,.banner-two {
+        text-align: center;
+        margin-left: 0px;
+    }
+    nav {
+        justify-content: center;
+    }
+    .banner-greeting {
+        font-size: 3rem;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    nav ul li {
+        margin-bottom: 5px;
+    }
+    .banner-pic {
+        width: 100%;
+        margin-left: 70px
+    }
+    .btn-primary {
+        font-size: 10px;
+        padding: 15px 25px;
+    }
+    .banner-content ,.banner-content-two {
+        width: 400px;
+    }
+
+}
